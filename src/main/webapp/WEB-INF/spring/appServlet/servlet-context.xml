@@ -15,7 +15,6 @@
 	<!-- 잘 알려진 이름의 이 빈이 우리를 위해서 뷰 이름을 생성한다 -->
   	<!-- <beans:bean id="viewNameTranslator" class="org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator"/> -->
 
-
 	<!-- Handles HTTP GET requests for /resources/** by efficiently serving up static resources in the ${webappRoot}/resources directory -->
 	<resources mapping="/resources/**" location="/resources/" />
 
