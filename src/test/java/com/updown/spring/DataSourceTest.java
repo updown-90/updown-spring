@@ -20,7 +20,7 @@ public class DataSourceTest {
     private DataSource datasource;
 
     @Test
-    public void DataSourceTest() throws Exception {
+    public void dataSourceTest() throws Exception {
     	Connection connection = datasource.getConnection();
     	System.out.println(connection);
     }
