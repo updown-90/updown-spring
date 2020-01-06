@@ -35,11 +35,13 @@
 	
 	<beans:bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
   		<beans:property name="dataSource" ref="dataSource" />
+  		<beans:property name="typeAliasesPackage" value="com.updown.spring.domain" />
   		<beans:property name="configLocation" value="classpath:/mybatis-config.xml" />
+  		<beans:property name="mapperLocations" value="classpath:/mapper/*Mapper.xml" />
 	</beans:bean>
 	
 	<context:component-scan base-package="com.updown.spring" />
 	
 	<!-- scan for mappers and let them be autowired -->
-	<!--     <mybatis:scan base-package="mapper" />	 -->
+	<mybatis:scan base-package="com.updown.spring.mapper" />
 </beans:beans>
